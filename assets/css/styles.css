@@ -1,0 +1,70 @@
+/* Google font import for Bai Jamjuree */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+/* General color variables */
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --color-base:#033f47;
+    --color-base2: #022a30;
+    --color-brand: #e0f780;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+/* links color and transition when hovered */
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-brand);
+}
+
+img{
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(245, 245, 245, .7);
+}
+
+/* on hover */
+.navbar .nav-link:hover {
+    /* color: var(--color-brand); */
+    /* color: white; */
+    color: rgba(53, 80, 162, 0.3);
+}
+
+/* changes nav bar orientation based on width of screen */
+@media (min-width : 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgb(3, 63, 71, 0.2), rgb(3, 63, 71, 0.3)), url(../images/IMG_9087.JPG);
+        /* Background cover and center doesn't look as good */
+        /* background-size: cover;
+        background-position: center; */
+    }
+    
+    .navbar-brand img {
+        box-shadow: 0 0 30px rgba(53, 80, 162, 0.3);
+    }
+}
