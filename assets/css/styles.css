@@ -4,6 +4,7 @@
 /* General color variables */
 :root {
     --color-body: #b6cbce;
+    --color-body: rgb(245, 245, 245, .7);
     --color-heading: #eef3db;
     --color-base:#033f47;
     --color-base2: #022a30;
@@ -14,13 +15,18 @@
 }
 
 body {
-    background-color: var(--color-base2);
-    color: var(--color-body);
+    /* background: url(https://image.arrivalguides.com/x/06/f118bfce95cb0e0bdb29f52dab64fa0f.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/IMG_9087.JPG);
+    background-size: auto; 
+    /* background-size: var(--color-base2); */
+    /* color: var(--color-body); */
+    color: rgb(245, 245, 245, .7);
     font-family: var(--font-base), sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: var(--color-heading);
+    /* color: var(--color-heading); */
+    color: var(--color-body);
     font-weight: 700;
 }
 
@@ -29,17 +35,37 @@ a {
     text-decoration: none;
     color: var(--color-body);
     transition: all 0.4s ease;
+    margin-top: 10px;
 }
 
 a:hover {
-    color: var(--color-brand);
+    /* color: var(--color-brand); */
+    color: rgba(53, 80, 162, 0.3);
 }
 
 img{
-    width: 100%;
+    width: 170px;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* maybe take this out? */
+    border-bottom: 2px solid rgb(245, 245, 245, .35);
 }
 
 /* NAVBAR */
+.navbar {
+    /* background-color: var(--color-base); */
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/IMG_9087.JPG);
+
+}
+
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
@@ -58,13 +84,59 @@ img{
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgb(3, 63, 71, 0.2), rgb(3, 63, 71, 0.3)), url(../images/IMG_9087.JPG);
-        /* Background cover and center doesn't look as good */
-        /* background-size: cover;
-        background-position: center; */
+        /* background: linear-gradient(rgb(3, 63, 71, 0.2), rgb(3, 63, 71, 0.3)), url(../images/IMG_9087.JPG); */
+        background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/IMG_9087.JPG);
+
     }
-    
+
     .navbar-brand img {
         box-shadow: 0 0 30px rgba(53, 80, 162, 0.3);
     }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper{
+        padding-left: var(--sidbar-width);
+
+    }
 }
+
+/* BUTTON */
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+    color: var(--color-body);
+ }
+
+ .btn-brand {
+    border-color: rgba(245, 245, 245, .5);
+    border-width: 2px;
+    
+ }
+
+ .btn:hover,
+ .btn-brand:focus {
+    color: rgba(53, 80, 162, 0.3);
+    border-color: rgba(245, 245, 245, .25);
+ }
+
+
+ /* Cool animation for links but just doesmt fit for now */
+ /* .link-custom {
+    font-weight: 700;
+    position: relative;
+ }
+
+ .link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgba(53, 80, 162, 0.3);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+ }
+
+ .link-custom:hover::after {
+    width: 100%;
+ } */
