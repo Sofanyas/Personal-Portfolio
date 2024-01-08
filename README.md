@@ -6,6 +6,6 @@
 ## Links
   -  Home
   -  About: School/Experinces
-  -  Interests: related to CS
+  -  Interests: related to CS = SERVICES
   -  Projects/Skills
   -  Leadership
