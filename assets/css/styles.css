@@ -3,7 +3,7 @@
 
 /* General color variables */
 :root {
-    --color-body: #b6cbce;
+    /* --color-body: #b6cbce; */
     --color-body: rgb(245, 245, 245, .7);
     --color-heading: #eef3db;
     --color-base:#033f47;
@@ -17,7 +17,8 @@
 body {
     /* background: url(https://image.arrivalguides.com/x/06/f118bfce95cb0e0bdb29f52dab64fa0f.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/IMG_9087.JPG);
-    background-size: auto; 
+    background-size:auto; 
+    background-attachment: fixed;
     /* background-size: var(--color-base2); */
     /* color: var(--color-body); */
     color: rgb(245, 245, 245, .7);
@@ -38,10 +39,9 @@ a {
     margin-top: 10px;
 }
 
-a:hover {
-    /* color: var(--color-brand); */
+/* a:hover{
     color: rgba(53, 80, 162, 0.3);
-}
+} */
 
 img{
     width: 170px;
@@ -50,6 +50,11 @@ img{
 
 img:hover{
     transform: translateY(-5px);
+}
+
+.bg-base {
+    background-color: rgba(75, 75, 75, 0.3);
+
 }
 
 .full-height {
@@ -62,6 +67,28 @@ img:hover{
     padding-bottom: 80px;
     /* maybe take this out? */
     border-bottom: 2px solid rgb(245, 245, 245, .35);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 rgba(75, 75, 75, 0.15);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--color-body);
+}
+
+.large-icon {
+    font-size: 64px;
 }
 
 /* NAVBAR */
@@ -134,7 +161,7 @@ img:hover{
 
 
  /* Cool animation for links but just doesmt fit for now */
- /* .link-custom {
+ .link-custom {
     font-weight: 700;
     position: relative;
  }
@@ -143,7 +170,7 @@ img:hover{
     content: "";
     width: 0%;
     height: 2px;
-    background-color: rgba(53, 80, 162, 0.3);
+    background-color: var(--color-body);
     position: absolute;
     left: 0;
     top: 110%;
@@ -152,4 +179,4 @@ img:hover{
 
  .link-custom:hover::after {
     width: 100%;
- } */
+ }
