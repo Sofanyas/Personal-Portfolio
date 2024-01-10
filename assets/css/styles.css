@@ -16,7 +16,7 @@
 
 body {
     /* background: url(https://image.arrivalguides.com/x/06/f118bfce95cb0e0bdb29f52dab64fa0f.jpg); */
-    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/IMG_9087.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
     background-size:auto; 
     background-attachment: fixed;
     /* background-size: var(--color-base2); */
@@ -36,19 +36,19 @@ a {
     text-decoration: none;
     color: var(--color-body);
     transition: all 0.4s ease;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 /* a:hover{
     color: rgba(53, 80, 162, 0.3);
 } */
 
-img{
+.profile-pic{
     width: 170px;
     transition: transform 0.7s;
 }
 
-img:hover{
+.profile-pic:hover{
     transform: translateY(-5px);
 }
 
@@ -94,7 +94,7 @@ img:hover{
 /* NAVBAR */
 .navbar {
     /* background-color: var(--color-base); */
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/IMG_9087.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop.JPG);
 
 }
 
@@ -102,7 +102,6 @@ img:hover{
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(245, 245, 245, .7);
-
     transition: transform 0.7s;
 }
 
@@ -116,13 +115,17 @@ img:hover{
     /* background-color: rgba(245, 245, 245, .5); */
 }
 
+.navbar .nav-link.active {
+    color: rgba(53, 80, 162, 0.5);
+}
+
 /* changes nav bar orientation based on width of screen */
 @media (min-width : 992px) {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
         /* background: linear-gradient(rgb(3, 63, 71, 0.2), rgb(3, 63, 71, 0.3)), url(../images/IMG_9087.JPG); */
-        background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/IMG_9087.JPG);
+        background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
 
     }
 
@@ -179,4 +182,18 @@ img:hover{
 
  .link-custom:hover::after {
     width: 100%;
+ }
+
+ /* CARD */
+ .card-custom .card-custom-image {
+    overflow: hidden;
+ }
+
+ .card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+
+ }
+
+ .card-custom:hover .card-custom-image img{
+    transform: scale(1.05);
  }

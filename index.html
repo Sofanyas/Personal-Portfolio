@@ -12,16 +12,18 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <!-- NAVBAR from https://getbootstrap.com/docs/5.3/components/navbar/#how-it-works -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container flex-lg-column ">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <div class="img-wrapper">
-                    <img src="./assets/images/53222765419_de3b9283c4_o copy.jpeg" class="d-none d-lg-block rounded-circle" alt="">
+                    <img src="./assets/images/self-portrait.jpeg" class="d-none d-lg-block rounded-circle profile-pic" alt="Profile Picture">
                 </div>
-                <span class="h3 fw-bold d-block d-lg-none">Sofanyas Genene</span>
+                <span class="h3 fw-bold d-block d-lg-none">
+                    Sofanyas Genene
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,25 +32,39 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">
+                            Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#interests">Interests</a>
+                        <a class="nav-link" href="#interests">
+                            Interests
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
+                        <a class="nav-link" href="#projects">
+                            Projects
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">
+                            About
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
+                        <a class="nav-link" href="#reviews">
+                            Reviews
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
+                        <a class="nav-link" href="#blog">
+                            Blog
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">
+                            Contact
+                        </a>
                     </li>    
                 </ul>
             </div>
@@ -64,13 +80,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h1 class="display-4 fw-bold">Hello, World! <br> 
-                            I'm Sofanyas Genene.</h1>
-                        <p class="lead mt-2 mb-4">Undergraduate Computer Science student with a concentration in 
+                        <h1 class="display-4 fw-bold" data-aos="fade-right">
+                            Hello, World!
+                        </h1h1> 
+                        <h1 class="display-4 fw-bold" data-aos="fade-right" data-aos-delay="200">
+                            I'm Sofanyas Genene.
+                        </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-right" data-aos-delay="400">
+                            Undergraduate Computer Science student with a concentration in 
                             Software Engineering at Virginia Commonwealth University.</p>
-                        <a href="#work" class="btn btn-brand me-2">Explore My Work</a>
-                        <a href="mailto: sofanyas.genene@gmail.com" class="btn btn-brand me-2">Send Email</a>
-                        <a href="https://drive.google.com/uc?export=download&id=1VBDxihNKci4FvMXwzPwzFoTVXJ-FYp4c" download="Resume-SofanyasGenene.pdf" class="btn btn-brand me-2">Download Resume</a>
+                        <a href="#work" class="btn btn-brand me-2" data-aos="fade-right" data-aos-delay="800">
+                            Explore My Work
+                        </a>
+                        <a href="mailto: sofanyas.genene@gmail.com" class="btn btn-brand me-2" data-aos="fade-right" data-aos-delay="600">
+                            Send Email
+                        </a>
+                        <a href="https://drive.google.com/uc?export=download&id=1VBDxihNKci4FvMXwzPwzFoTVXJ-FYp4c" download="Resume-SofanyasGenene.pdf" class="btn btn-brand me-2" data-aos="fade-right" data-aos-delay="400">
+                            Download Resume
+                        </a>
                     </div>
                 </div>
             </div>
@@ -78,23 +105,30 @@
         <!-- //HOME -->
 
         <!-- INTERESTS -->
-        <section id="interest" class="full-height px-lg-5">
+        <section id="interests" class="full-height px-lg-5">
             <div class="container">
 
-                <div class="row pb-4">
+                <div class="row pb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                     <div class="col-lg-8">
-                        <h6 class="text-brand">INTERESTS</h6>
-                        <h1>Areas of Interests</h1>
+                        <h6 class="text-brand">
+                            INTERESTS
+                        </h6>
+                        <h1>
+                            Areas of Interests
+                        </h1>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox">
                                 <i class="las la-desktop large-icon"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Web Development</h5>
+                            <h5 class="mt-4 mb-2">
+                                Web Development
+                            </h5>
                             <p>
                                 My current interest lies in web development, and I've taken the initiative to delve deeper into this 
                                 field by independently creating the personal portfolio you see here today. 
@@ -104,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox">
                                 <i class="lab la-java large-icon"></i>
@@ -119,7 +153,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         <div class="service p-4 bg-base rounded-4 shadow-effect">
                             <div class="iconbox">
                                 <i class="las la-user-tie large-icon"></i>
@@ -138,7 +172,139 @@
 
             </div>
         </section>
-        <!-- //SERVICES -->
+        <!-- //Interests -->
+
+        <!-- PROJECTS -->
+        <section id="projects" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4">
+                    
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+                        <h6 class="text-brand">
+                            Projects
+                        </h6>
+                        <h1>
+                            Personal Projects
+                        </h1>
+                    </div>
+
+                    <div class="row gy-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+
+                        <div class="col-md-6">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4 img-fluid" src="./assets/images/website_SS.png" alt="Screenshot of personal website project">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>
+                                        Portfolio Website
+                                    </h4>
+                                    <p>
+                                        Developed an interactive website to showcase my experience and personality. 
+                                        Developed using HTML and CSS for structure and style, Bootstrap for responsive templates, 
+                                        and JavaScript for backend processes/interactive features, and Git for version control. Currently
+                                        learning React to incorporate dynamic UI enhancements.
+                                    </p>
+                                    <a href="https://github.com/Sofanyas/Personal-Portfolio" class="link-custom lab la-github" >
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4 img-fluid" src="./assets/images/img_placeHolder.png" alt="Screenshot of personal website project">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>
+                                        Animal Match
+                                    </h4>
+                                    <p>
+                                        Developed an interactive iOS game using Swift and UIKit, where users match animal names 
+                                        with corresponding images, enhancing cognitive and visual recognition skills. Gained 
+                                        hands-on experience in iOS app development, UI design, and event handling. 
+                                    </p>
+                                    <a href="https://github.com/Sofanyas/Animal-Match" class="link-custom lab la-github">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4 img-fluid" src="./assets/images/SysLiteShell.png" alt="Screenshot of personal website project">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>
+                                        SysLiteShell
+                                    </h4>
+                                    <p>
+                                        Developed a lightweight shell in C, leveraging core concepts like multithreading, forks, 
+                                        Unix system calls, and signal handling. Gained hands-on experience in system-level 
+                                        programming, deepened understanding of operating system concepts, encompassing process 
+                                        management and signal handling.
+                                    </p>
+                                    <a href="https://github.com/Sofanyas/SysLiteShell" class="link-custom lab la-github">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4 img-fluid" src="./assets/images/1*vIuGZryGZzlCJNhIDPPRWg.png" alt="Screenshot of personal website project">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>
+                                        Parse Math Expression
+                                    </h4>
+                                    <p>
+                                        Developed a Java program utilizing binary tree structures for parsing and evaluating 
+                                        mathematical expressions. Gaining hands-on experience in algorithmic design, exception 
+                                        handling, and data structure implementation.
+                                    </p>
+                                    <a href="https://github.com/Sofanyas/Parse-Math-Expression" class="link-custom lab la-github">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
+                            <div class="card-custom rounded-4 bg-base shadow-effect">
+                                <div class="card-custom-image rounded-4">
+                                    <img class="rounded-4 img-fluid" src="./assets/images/img_placeHolder.png" alt="Screenshot of personal website project">
+                                </div>
+                                <div class="card-custom-content p-4">
+                                    <h4>
+                                        Playlist Simulator
+                                    </h4>
+                                    <p>
+                                        Powered by the Bridges API, this program leverages a linked list data structure to efficiently 
+                                        manage a collection of Song objects, each encapsulating details like title, artist, and album. 
+                                        Orchestrated by the SongList class, adhering to a List interface, it facilitates operations 
+                                        like insertion, removal, and seamless iteration through the song catalog, emulating a playlist
+                                        environment and replicating the fluid experience of organizing and navigating through a digital 
+                                        playlist.
+                                    </p>
+                                    <a href="https://github.com/Sofanyas/SysLiteShell" class="link-custom lab la-github">
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //PROJECTS -->
 
     </div>
     <!-- //CONTENT WRAPPER -->
