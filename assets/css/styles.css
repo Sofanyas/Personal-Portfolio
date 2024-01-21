@@ -100,7 +100,7 @@ a {
 }
 
 .navbar .nav-link {
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     color: rgb(245, 245, 245, .7);
     transition: transform 0.7s;
@@ -110,14 +110,17 @@ a {
 .navbar .nav-link:hover {
     /* color: var(--color-brand); */
     /* color: white; */
-    color: rgba(53, 80, 162, 0.5);
+    /* color: rgba(53, 80, 162, 0.5); */
     
     transform: translateY(-5px);
+    transition: transform 0.7s;
     /* background-color: rgba(245, 245, 245, .5); */
 }
 
 .navbar .nav-link.active {
-    color: rgba(53, 80, 162, 0.5);
+    /* color: rgba(53, 80, 162, 0.5); */
+    color: #f5f5f5;
+    font-weight: bolder;
 }
 
 /* changes nav bar orientation based on width of screen */
@@ -159,7 +162,6 @@ a {
  .btn-brand:focus {
     color: rgba(53, 80, 162, 0.5);
     border-color: rgba(245, 245, 245, .25);
-    transform: translateY(-5px);
     background-color: rgba(245, 245, 245, .5);
  }
 
