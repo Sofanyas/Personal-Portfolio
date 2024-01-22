@@ -1,0 +1,189 @@
+/* Google font import for Bai Jamjuree */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+/* General color variables */
+:root {
+    --color-body: rgb(245, 245, 245, .7);
+    --color-base: rgba(75, 75, 75, 0.3);
+    --color-base2: rgba(245, 245, 245, .5); 
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
+    background-size:auto; 
+    background-attachment: fixed;
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-body);
+    font-weight: 700;
+}
+
+/* links color and transition when hovered */
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+    margin-top: 12px;
+}
+
+.profile-pic{
+    width: 170px;
+    transition: transform 0.7s;
+}
+
+.profile-pic:hover{
+    transform: translateY(-5px);
+}
+
+.bg-base {
+    background-color: var(--color-base);
+
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgb(245, 245, 245, .35);
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 rgba(75, 75, 75, 0.15);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--color-body);
+}
+
+.large-icon {
+    font-size: 64px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop.JPG);
+
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-body);
+    transition: transform 0.7s;
+}
+
+/* on hover */
+.navbar .nav-link:hover {
+    transform: translateY(-5px);
+    transition: transform 0.7s;
+}
+
+.navbar .nav-link.active {
+    color: #f5f5f5;
+    font-weight: bolder;
+}
+
+/* changes nav bar orientation based on width of screen */
+@media (min-width : 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/BackDrop.JPG);
+
+    }
+
+    .navbar-brand img {
+        box-shadow: 0 0 30px rgba(53, 80, 162, 0.3);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper{
+        padding-left: var(--sidbar-width);
+
+    }
+}
+
+/* BUTTON */
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+    color: var(--color-body);
+    transition: transform 0.7s;
+ }
+
+ .btn-brand {
+    border-color: var(--color-base2);
+    border-width: 2px;
+    
+ }
+
+ .btn:hover,
+ .btn-brand:focus {
+    color: rgba(53, 80, 162, 0.5);
+    border-color: rgba(245, 245, 245, .25);
+    background-color: var(--color-base2);
+ }
+
+ .link-custom {
+    font-weight: 700;
+    position: relative;
+ }
+
+ .link-custom::after {
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-body);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+ }
+
+ .link-custom:hover::after {
+    width: 100%;
+ }
+
+ /* CARD */
+ .card-custom .card-custom-image {
+    overflow: hidden;
+ }
+
+ .card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+
+ }
+
+ .card-custom:hover .card-custom-image img{
+    transform: scale(1.05);
+ }
+
+ /* SOCIAL ICONS */
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base);
+    border-radius: 100px;
+    font-size: 24px;
+}
