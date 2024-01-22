@@ -24,5 +24,6 @@ To view the website locally, clone this repository and open index.html in your b
 ## Contact
 
 LinkedIn: Sofanyas Genene
+
 Email: Sofanyas.Genene@gmail.com
 
