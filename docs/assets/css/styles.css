@@ -18,6 +18,16 @@ body {
     font-family: var(--font-base), sans-serif;
 }
 
+/* Background for desktop screens */
+@media (min-width: 768px) {
+  background-attachment: fixed;
+}
+
+/* Background for mobile screens */
+@media (max-width: 767px) {
+  background-attachment: scroll; /* or you can omit this line, as scroll is the default behavior */
+}
+
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-body);
     font-weight: 700;
