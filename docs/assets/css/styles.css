@@ -24,6 +24,7 @@ body {
 
     /* Default background for all screen sizes */
     background: linear-gradient(rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0.202)), url(../images/BackDrop\ copy2.JPG);
     background-size: auto;
 }
 
