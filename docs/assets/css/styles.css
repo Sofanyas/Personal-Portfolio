@@ -10,13 +10,37 @@
     --font-base: "Bai Jamjuree";
 }
 
-body {
+/* body {
     background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
     background-size:auto; 
     background-attachment: fixed;
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
+} */
+
+body {
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+
+    /* Default background for all screen sizes */
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
+    background-size: auto;
 }
+
+/* Background for desktop screens */
+@media (min-width: 768px) {
+    body {
+        background-attachment: fixed;
+    }
+}
+
+/* Background for mobile screens */
+@media (max-width: 767px) {
+    body {
+        background-attachment: scroll; /* or you can omit this line, as scroll is the default behavior */
+    }
+}
+
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-body);
