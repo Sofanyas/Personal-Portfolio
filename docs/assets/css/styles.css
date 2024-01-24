@@ -106,6 +106,8 @@ a {
 /* NAVBAR */
 .navbar {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop\ copy2.JPG);
+
 }
 
 .navbar .nav-link {
