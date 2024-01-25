@@ -11,7 +11,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDropcopy2.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(/docs/assets/images/BackDropcopy2.JPG);
     background-size:auto; 
     background-attachment: fixed;
     color: var(--color-body);
@@ -81,7 +81,7 @@ a {
 
 /* NAVBAR */
 .navbar {
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(/docs/assets/images/BackDropcopy2.JPG);
 
 }
 
@@ -108,7 +108,7 @@ a {
     .navbar {
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/BackDrop.JPG);
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(/docs/assets/images/BackDropcopy2.JPG);
 
     }
 
