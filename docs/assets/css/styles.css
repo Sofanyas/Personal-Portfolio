@@ -11,11 +11,16 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
+    background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG) no-repeat;
     background-size:auto; 
     background-attachment: fixed;
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+
+
 }
 
 /* Background for desktop screens */
