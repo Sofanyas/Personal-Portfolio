@@ -10,22 +10,12 @@
     --font-base: "Bai Jamjuree";
 }
 
-/* body {
+body {
     background: linear-gradient(rgba(0, 0, 0, 0.202), rgb(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
     background-size:auto; 
     background-attachment: fixed;
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
-} */
-
-body {
-    color: var(--color-body);
-    font-family: var(--font-base), sans-serif;
-
-    /* Default background for all screen sizes */
-    background: linear-gradient(rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0.202)), url(../images/BackDrop.JPG);
-    background: linear-gradient(rgba(0, 0, 0, 0.202), rgba(0, 0, 0, 0.202)), url(../images/BackDrop\ copy2.JPG);
-    background-size: auto;
 }
 
 /* Background for desktop screens */
@@ -38,7 +28,7 @@ body {
 /* Background for mobile screens */
 @media (max-width: 767px) {
     body {
-        background-attachment: scroll; /* or you can omit this line, as scroll is the default behavior */
+        background-attachment: initial; /* or you can omit this line, as scroll is the default behavior */
     }
 }
 
@@ -105,7 +95,6 @@ a {
 /* NAVBAR */
 .navbar {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop.JPG);
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgb(0, 0, 0, 0.25)), url(../images/BackDrop\ copy2.JPG);
 
 }
 
